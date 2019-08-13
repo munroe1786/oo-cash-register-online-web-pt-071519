@@ -26,6 +26,7 @@ def apply_discount
   end
   
   def void_last_transaction
-    
+    @running_totals.pop
+    @total = @running_totals.last
   end
 end
